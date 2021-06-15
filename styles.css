@@ -1,6 +1,6 @@
 /* Reto 5 */
 body {
-    background-color: #fffbf7;
+    background-color: #ffbee6;
 }
 
 h1 {
@@ -14,4 +14,12 @@ p {
 button {
     color: #fff;
     background-color: #025157;
+}
+
+form {
+    text-align: right;
+}
+
+img {
+    align-content: right;
 }
