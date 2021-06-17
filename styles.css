@@ -1,6 +1,6 @@
 /* Reto 5 */
 body {
-    background-color: #ffbee6;
+    background-color: #d5f0fd;
 }
 
 h1 {
@@ -16,10 +16,61 @@ button {
     background-color: #025157;
 }
 
+.header {
+    margin-top: 40px 20px 0px;
+    line-height: 45px;
+    font-size: 0;
+}
+
 form {
     text-align: right;
 }
 
 img {
     align-content: right;
+}
+
+li {
+    display: inline;
+}
+
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+    font-family: sans-serif;
+}
+
+.logo {
+    width: 15%;
+}
+
+.navbar {
+    width: 70%;
+    text-align: left;
+    color: green;
+}
+
+.navbar > ul > li {
+    margin: 0 25px;
+}
+
+.actions {
+    width: 15%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.actions > a {
+    color: #67b54b;
+}
+
+.actions > button {
+    color: white;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border-radius: 5px;
+    border-style: none;
 }
