@@ -27,7 +27,7 @@ button {
     margin-left: 20px;
     margin-right: 20px;
     font-size: 0;
-    height: 45px;
+    height: 55px;
     font-family: sans-serif;
 }
 
@@ -36,7 +36,6 @@ button {
     font-size: 16px;
     vertical-align: middle;
     height: 100%;
-    line-height: 45px;
 }
 
 li {
@@ -57,10 +56,14 @@ li {
     color: #025157;
 }
 
+.navbar > ul {
+    margin-top: 10px;
+}
+
 .menu-item {
     display: inline;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: 12px;
+    margin-left: 12px;
 }
 
 .actions {
@@ -81,7 +84,7 @@ li {
 .actions button {
     color: white;
     background-color: #67b54b;
-    padding: 12px 14px;
+    padding: 16px 14px;
     border: 0;
     border-radius: 5px;
 }
