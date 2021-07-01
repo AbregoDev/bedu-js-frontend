@@ -258,10 +258,29 @@ li {
     margin-left: 20px;
 }
 
+.features {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 2fr); */
+    grid-template: repeat(2, 1fr) / repeat(2, 330fr);
+}
+
+.features article {
+    background-color: aqua;
+    margin: 10px;
+    width: 40%;
+    height: 50px;
+}
+
 /* .features .feature-card .feature-image figure
 .features .feature-card .feature-image img {
 
 } */
+
+#carouselExampleControls {
+    width: 70%;
+    margin: auto;
+}
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
