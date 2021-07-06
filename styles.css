@@ -259,27 +259,62 @@ li {
 }
 
 .features {
+    background-color: #025157;
+    padding: 5% 10%;
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 2fr); */
-    grid-template: repeat(2, 1fr) / repeat(2, 330fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 330px);
 }
 
 .features article {
-    background-color: aqua;
-    margin: 10px;
-    width: 40%;
-    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 14px;
+    overflow: hidden;
 }
 
-/* .features .feature-card .feature-image figure
-.features .feature-card .feature-image img {
+.features > article > .features-content {
+    margin: 20px 40px;
+}
 
-} */
+.features > article > .features-content > img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.features > article > .features-content > h3 {
+    font-size: 18pt;
+}
+
+.features > article > .features-content > p {
+    font-size: 12pt;
+    font-weight: lighter;
+    color: gray;
+}
+
+.features > article > .features-content > a {
+    font-weight: bold;
+    color: #67b54b
+}
+
+.features > article > .features-image {
+    flex: 1;
+    width: 40%;
+    height: 80%;
+    position: relative;
+    right: -50px;
+}
+
+.features > article > .features-image > img {
+    height: 100%;
+}
 
 #carouselExampleControls {
-    width: 70%;
-    margin: auto;
+    margin-top: 0;
+    width: 100%;
 }
 
 /** dispositivos móviles en vista viewport (vertical) */
