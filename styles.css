@@ -4,7 +4,6 @@ body {
     background-color: #fffbf7;
     font-family: 'Open Sans';
     margin: 0;
-    margin-top: 100px;
 }
 
 h1 {
@@ -55,9 +54,9 @@ li {
 }
 
 .navbar {
-    width: 60%;
     text-align: center;
     color: #025157;
+    font-weight: 500;
 }
 
 .menu-item {
@@ -332,11 +331,6 @@ li {
 
 /* dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-    .navbar,
-    .actions {
-        display: none;
-    }
-    
     h1 {
         font-size: 30px;
     }
