@@ -4,16 +4,19 @@ body {
     background-color: #fffbf7;
     font-family: 'Open Sans';
     margin: 0;
+    margin-top: 100px;
 }
 
 h1 {
     color: #025157;
     text-align: center;
     font-weight: 800;
+    font-family: "Alegreya", serif;
 }
 
 p {
     color: #343434;
+    font-family: Verdana;
     font-size: 20px;
 }
 
@@ -23,11 +26,11 @@ button {
 }
 
 .header {
-    margin-top: 20px;
+    margin-top: 12px;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 0;
-    height: 55px;
+    height: 45px;
     font-family: sans-serif;
 }
 
@@ -36,6 +39,7 @@ button {
     font-size: 16px;
     vertical-align: middle;
     height: 100%;
+    line-height: 45px;
 }
 
 li {
@@ -43,7 +47,7 @@ li {
 }
 
 .logo {
-    width: 15%;
+    width: 20%;
 }
 
 .logo > img {
@@ -51,23 +55,19 @@ li {
 }
 
 .navbar {
-    width: 70%;
+    width: 60%;
     text-align: center;
     color: #025157;
 }
 
-.navbar > ul {
-    margin-top: 10px;
-}
-
 .menu-item {
     display: inline;
-    margin-right: 12px;
-    margin-left: 12px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .actions {
-    width: 15%;
+    width: 20%;
     text-align: right;
     font-size: 14px;
 }
@@ -84,14 +84,14 @@ li {
 .actions button {
     color: white;
     background-color: #67b54b;
-    padding: 16px 14px;
+    padding: 4px 14px;
     border: 0;
     border-radius: 5px;
 }
 
-/* .publish {
-
-} */
+.publish {
+    margin-left: 20px;
+}
 
 .publish h3 {
     font-family: "Alegreya", serif;
@@ -136,10 +136,10 @@ li {
 
 .fixed-header {
     position: fixed;
+    background-color: #fffbf7;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #fffbf7;
 }
 
 .who-trust-us {
@@ -313,46 +313,96 @@ li {
 }
 
 #carouselExampleControls {
-    margin-top: 0;
-    width: 100%;
+    margin: auto;
+    width: 60%;
 }
 
-/** dispositivos móviles en vista viewport (vertical) */
+.how-works > h2 {
+    font-size: 50px;
+    font-family: "Alegreya", serif;
+    color: #025157;
+    /* margin: auto; */
+}
+
+.how-works > .benefits {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 330px);
+}
+
+/* dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
     .navbar,
     .actions {
         display: none;
     }
-
-    main {
-        margin-top: 130px;
-    }
-
+    
     h1 {
         font-size: 30px;
+    }
+    
+    main {
+        margin-top: 130px;
     }
 
     .banner > img {
         width: 100%;
     }
+
+    .promo {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .explanatory-video > video {
+        width: 100%;
+    }
+
+    .publish > h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .publish > form {
+        flex-direction: column;
+    }
+
+    .publish > form > div {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .publish > form > div > input {
+        width: 65%;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        padding: 20px 0;
+    }
+
+    .features-image > img {
+        display: none;
+    }
 }
   
-/** dispositivos pequeños en vista landscape (horizontal) */
-/* @media (min-width: 576px and max-width: 767px) {
+/* dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
 
-} */
+}
 
-/** dispositivos medianos (tablets) */
-/* @media (min-width: 768px and max-width: 991px) {
+/* dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
 
-} */
+}
 
-/** dispositivos grandes (desktops) */
-/* @media (min-width: 992px and max-width: 1199px) {
+/* dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
 
-} */
+}
 
-/** dispositivos extra grandes (monitores grandes, tvs) */
+/* dispositivos extra grandes (monitores grandes, tvs) */
 @media (min-width: 1200px) {
 
 }
